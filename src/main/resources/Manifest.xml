@@ -1,0 +1,17 @@
+<manifest>
+    <main-class>com.cryo.CryoDung</main-class>
+    <name>CryoDung</name>
+    <description>Attempts to complete dungeons on RS3.</description>
+    <version>0.0.1</version>
+
+    <compatibility>
+        <game-type>RS3</game-type>
+    </compatibility>
+
+    <categories>
+        <category>DUNGEONEERING</category>
+    </categories>
+    <resources>
+        <resource>GUI.fxml</resource>
+    </resources>
+</manifest>
