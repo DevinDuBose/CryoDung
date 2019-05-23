@@ -1,9 +1,14 @@
 package com.cryo;
 
 import com.cryo.entities.FloorSize;
+import com.runemate.game.api.hybrid.location.Area;
+import com.runemate.game.api.hybrid.location.Coordinate;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
@@ -22,6 +27,21 @@ public class GUIController implements Initializable {
 
     @FXML
     private ComboBox<String> size;
+
+    @FXML
+    private CheckBox trainSkills;
+
+    @FXML
+    private Label startRoomLabel;
+
+    @FXML
+    private Label currentRoomLabel;
+
+    @FXML
+    private Label dungeonsEnteredLabel;
+
+    @FXML
+    private Label dungeonsFinishedLabel;
 
     public GUIController(CryoDung dung) {
         this.dung = dung;
@@ -42,5 +62,30 @@ public class GUIController implements Initializable {
             if (size == null) return;
             dung.setSize(size);
         });
+
+        trainSkills.selectedProperty().addListener((observable, oldValue, newValue) -> {
+            dung.setTrainSkills(newValue);
+        });
+
+    }
+
+    public void setStartRoom(Area.Rectangular rectangle) {
+        Platform.runLater(() -> {
+            Coordinate bottomLeft = rectangle.getBottomLeft();
+            Coordinate topRight = rectangle.getTopRight();
+            startRoomLabel.setText("[" + bottomLeft.getX() + ", " + bottomLeft.getY() + "], [" + topRight.getX() + ", " + topRight.getY() + "]");
+        });
+    }
+
+    public void setCurrentRoom(int x, int y) {
+        Platform.runLater(() -> currentRoomLabel.setText("[" + x + ", " + y + "]"));
+    }
+
+    public void setDungeonsEntered(int entered) {
+        Platform.runLater(() -> dungeonsEnteredLabel.setText(Integer.toString(entered)));
+    }
+
+    public void setDungeonsFinished(int finished) {
+        Platform.runLater(() -> dungeonsFinishedLabel.setText(Integer.toString(finished)));
     }
 }

@@ -20,10 +20,19 @@
                    preserveRatio="true"/>
 
         <Label layoutX="225.0" layoutY="110.0" text="Complexity:"/>
-        <ComboBox fx:id="complexity" layoutX="357.0" layoutY="110.0">
-        </ComboBox>
+        <ComboBox fx:id="complexity" layoutX="357.0" layoutY="110.0"/>
         <Label layoutX="225.0" layoutY="150.0" text="Floor Size:"/>
         <ComboBox fx:id="size" layoutX="357.0" layoutY="150.0"/>
+        <Label layoutX="225.0" layoutY="190.0" text="Train Skills?"/>
+        <CheckBox fx:id="trainSkills" layoutX="357.0" layoutY="190.0"/>
+        <Label layoutX="225.0" layoutY="230.0" text="Starting Room:"/>
+        <Label fx:id="startRoomLabel" layoutX="357.0" layoutY="230.0" text="N/A"/>
+        <Label layoutX="225.0" layoutY="270.0" text="Current Room:"/>
+        <Label fx:id="currentRoomLabel" layoutX="357.0" layoutY="270.0" text="N/A"/>
+        <Label layoutX="225.0" layoutY="310.0" text="Dungeons Entered:"/>
+        <Label fx:id="dungeonsEnteredLabel" layoutX="357.0" layoutY="310.0" text="N/A"/>
+        <Label layoutX="225.0" layoutY="350.0" text="Dungeons Finished:"/>
+        <Label fx:id="dungeonsFinishedLabel" layoutX="357.0" layoutY="350.0" text="N/A"/>
 
     </children>
 </Pane>
