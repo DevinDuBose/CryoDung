@@ -1,0 +1,33 @@
+CryoDung:
+
+  General:
+    ☐ Update 'getRoomArea' to use chunk formula from Trent
+    ☐ Update loop to get current player's room coords each time
+
+  Puzzle Rooms:
+    ☐ Work on puzzle room base
+    ☐ Begin adding puzzle rooms
+    Impl:
+      ☐ Monolith
+      ☐ Skinweaver
+      ☐ Lever
+      ☐ Ghosts
+      ☐ Emote
+      ☐ Restless Spirit (Think there's 2)
+      ☐ Fremmenik Supplies (Not sure what to name)
+      ☐ Puzzle blocks
+      ☐ Ferret Room (Catch)
+      ☐ Ferret Room (Lure w/ fish)
+      ☐ Ferret Room (Lure on tiles)
+      ☐ Statue Room (Missing weapon)
+      ☐ Statue Room (Match Puzzle)
+      ☐ Riddle Room
+
+  Bosses:
+
+  Floor Types:
+    ☐ Frozen
+    ☐ Abandoned
+    ☐ Furnished
+    ☐ Occult
+    ☐ Warped
