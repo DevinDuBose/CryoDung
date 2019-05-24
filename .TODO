@@ -6,6 +6,7 @@ CryoDung:
     ☐ Eat when low health
     ☐ Detect when bot is started within a dungeon, exit and restart dungeon
     ☐ Update loop to allow for pausing and personally traversing through dungeon, then resuming
+    ☐ Update loop to check active varcs for keys, Varcs.getInt(1812 + key.getIndex());
 
   Skilling:
     ☐ Only trains when option is selected in GUI
@@ -43,6 +44,47 @@ CryoDung:
       ☐ Riddle Room
 
   Bosses:
+    Frozen (Floors 1-11)
+      ☐ Gluttonous behemoth
+      ☐ Astea Frostweb
+      ☐ Icy Bones
+      ☐ Luminescent icefiend
+      ☐ Plane-freezer Lakhrahnaz
+      ☐ To'Kash the Bloodchiller
+
+    Abandoned 1 (Floors 12-17)
+      ☐ Skeletal Horde/Divine skinweaver
+      ☐ Hobgoblin Geomancer
+      ☐ Bulwark beast
+      ☐ Unholy cursebearer
+
+    Furnished (Floors 18-29)
+      ☐ Rammernaut
+      ☐ Stomp
+      ☐ Har'Lakk the Riftsplitter
+      ☐ Lexicus Runewright
+      ☐ Sagittare
+      ☐ Night-gazer Khighorahk
+
+  Abandoned 2 (Floors 30-35)
+      ☐ Shadow-forger Ihlakhizan
+      ☐ Bal'lak the Pummeller
+
+  Occult (Floors 36-47)
+      ☐ Skeletal trio
+      ☐ Runebound behemoth
+      ☐ Gravecreeper
+      ☐ Necrolord
+      ☐ Flesh-spoiler Haasghenahk
+      ☐ Yk'Lagor the Thunderous
+
+  Warped (Floors 48-60)
+      ☐ Blink
+      ☐ Warped Gulega
+      ☐ Dreadnaut
+      ☐ Hope devourer
+      ☐ World-gorger Shukarhazh
+      ☐ Kal'Ger the Warmonger
 
   Floor Types:
     ☐ Frozen
