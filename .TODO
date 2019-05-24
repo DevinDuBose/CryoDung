@@ -3,6 +3,25 @@ CryoDung:
   General:
     ☐ Update 'getRoomArea' to use chunk formula from Trent
     ☐ Update loop to get current player's room coords each time
+    ☐ Eat when low health
+    ☐ Detect when bot is started within a dungeon, exit and restart dungeon
+    ☐ Update loop to allow for pausing and personally traversing through dungeon, then resuming
+
+  Skilling:
+    ☐ Only trains when option is selected in GUI
+    ☐ Skill training != completing puzzles that require a skill (Will still complete puzzle room using skill even with option unselected)
+    ✔ Buys feathers as dungeon starts @done(2019-05-23 19:27) @project(CryoDung / Skilling)
+    ☐ Watches for skill nodes, completes them once room is cleared and ready to progress (Very last thing)
+    ☐ Script will kill monsters and enter a dead-end if there are skill nodes to be completed
+
+  Potions:
+    ☐ PotionManager class, handles making potions if needed
+    ☐ Starts when dungeon can't go any further without completing or making potions
+    ☐ Keeps track of farming spots
+    ☐ Keeps track of $ required, picks up coins on the way if needed (While traversing dungeon, not on way to purchase items)
+    ☐ Teleports home, makes required potion, stops
+    ☐ Regular script resumes, but now we have the potion to open a room, regular traversal will move to room and open door now that we can
+    ☐ Keeps track of if door requires potion, drink potion before opening
 
   Puzzle Rooms:
     ☐ Work on puzzle room base
